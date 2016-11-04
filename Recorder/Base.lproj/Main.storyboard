@@ -1,26 +1,88 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVa-c4-tDR">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="4F9-Cl-gUk"/>
+                                    <constraint firstAttribute="height" constant="30" id="OKw-dN-vxy"/>
+                                </constraints>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="juf-JQ-z5O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rV7-NO-u4b">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="dji-Dx-PQ1"/>
+                                    <constraint firstAttribute="height" constant="30" id="njH-ZR-x1T"/>
+                                </constraints>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qEl-Ws-9nR"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MicrophoneHot.png" translatesAutoresizingMaskIntoConstraints="NO" id="OdL-UH-cPe">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="JuY-VW-TAB"/>
+                                    <constraint firstAttribute="height" constant="337" id="atp-nZ-MH8"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AeH-Xk-C0T">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="d8l-az-1CA"/>
+                                    <constraint firstAttribute="height" constant="30" id="nOl-d3-saj"/>
+                                </constraints>
+                                <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="recordPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9bt-OC-DpK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.067445934220000003" green="0.066812292999999995" blue="0.069230769230000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="AeH-Xk-C0T" firstAttribute="leading" secondItem="rV7-NO-u4b" secondAttribute="trailing" constant="8" id="3x1-5M-aWy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rV7-NO-u4b" secondAttribute="bottom" constant="59" id="7jr-TB-fVo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CVa-c4-tDR" secondAttribute="bottom" constant="59" id="8dM-Oj-gWS"/>
+                            <constraint firstItem="CVa-c4-tDR" firstAttribute="leading" secondItem="AeH-Xk-C0T" secondAttribute="trailing" constant="8" id="934-mB-bIE"/>
+                            <constraint firstItem="OdL-UH-cPe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="JqV-f4-qk5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AeH-Xk-C0T" secondAttribute="bottom" constant="59" id="Mmg-EO-4G5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CVa-c4-tDR" secondAttribute="trailing" constant="41" id="coZ-1B-fI0"/>
+                            <constraint firstItem="OdL-UH-cPe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ewc-gW-5vm"/>
+                            <constraint firstItem="rV7-NO-u4b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="m2f-Bb-lG5"/>
+                            <constraint firstItem="OdL-UH-cPe" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="oU8-CH-Xn1"/>
+                            <constraint firstItem="rV7-NO-u4b" firstAttribute="top" secondItem="OdL-UH-cPe" secondAttribute="bottom" constant="34" id="zlw-Cz-LPq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="playButton" destination="rV7-NO-u4b" id="FLX-eZ-BYt"/>
+                        <outlet property="recordPauseButton" destination="AeH-Xk-C0T" id="oc7-V6-1Sd"/>
+                        <outlet property="stopButton" destination="CVa-c4-tDR" id="kBh-dw-Ano"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.875" y="137.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MicrophoneHot.png" width="256" height="256"/>
+    </resources>
 </document>

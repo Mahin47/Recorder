@@ -15,6 +15,11 @@
 		F573F6C41DCC9727000E466E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F573F6C21DCC9727000E466E /* LaunchScreen.storyboard */; };
 		F573F6CF1DCC9728000E466E /* RecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F573F6CE1DCC9728000E466E /* RecorderTests.m */; };
 		F573F6DA1DCC9728000E466E /* RecorderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F573F6D91DCC9728000E466E /* RecorderUITests.m */; };
+		F573F6E91DCC98B3000E466E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F573F6E81DCC98B3000E466E /* AVFoundation.framework */; };
+		F573F6EB1DCC98DC000E466E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F573F6EA1DCC98DC000E466E /* UIKit.framework */; };
+		F573F6ED1DCC98E5000E466E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F573F6EC1DCC98E5000E466E /* Foundation.framework */; };
+		F573F6EF1DCC98EF000E466E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F573F6EE1DCC98EF000E466E /* CoreGraphics.framework */; };
+		F573F6F31DCCCF66000E466E /* MicrophoneHot.png in Resources */ = {isa = PBXBuildFile; fileRef = F573F6F21DCCCF66000E466E /* MicrophoneHot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		F573F6D51DCC9728000E466E /* RecorderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecorderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F573F6D91DCC9728000E466E /* RecorderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecorderUITests.m; sourceTree = "<group>"; };
 		F573F6DB1DCC9728000E466E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F573F6E81DCC98B3000E466E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F573F6EA1DCC98DC000E466E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F573F6EC1DCC98E5000E466E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F573F6EE1DCC98EF000E466E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F573F6F21DCCCF66000E466E /* MicrophoneHot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MicrophoneHot.png; path = ../../MicrophoneHot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F573F6EF1DCC98EF000E466E /* CoreGraphics.framework in Frameworks */,
+				F573F6ED1DCC98E5000E466E /* Foundation.framework in Frameworks */,
+				F573F6EB1DCC98DC000E466E /* UIKit.framework in Frameworks */,
+				F573F6E91DCC98B3000E466E /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +99,7 @@
 				F573F6CD1DCC9728000E466E /* RecorderTests */,
 				F573F6D81DCC9728000E466E /* RecorderUITests */,
 				F573F6B21DCC9727000E466E /* Products */,
+				F573F6E71DCC98B3000E466E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +132,7 @@
 		F573F6B41DCC9727000E466E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F573F6F21DCCCF66000E466E /* MicrophoneHot.png */,
 				F573F6B51DCC9727000E466E /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +154,17 @@
 				F573F6DB1DCC9728000E466E /* Info.plist */,
 			);
 			path = RecorderUITests;
+			sourceTree = "<group>";
+		};
+		F573F6E71DCC98B3000E466E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F573F6EE1DCC98EF000E466E /* CoreGraphics.framework */,
+				F573F6EC1DCC98E5000E466E /* Foundation.framework */,
+				F573F6EA1DCC98DC000E466E /* UIKit.framework */,
+				F573F6E81DCC98B3000E466E /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F573F6C41DCC9727000E466E /* LaunchScreen.storyboard in Resources */,
+				F573F6F31DCCCF66000E466E /* MicrophoneHot.png in Resources */,
 				F573F6C11DCC9727000E466E /* Assets.xcassets in Resources */,
 				F573F6BF1DCC9727000E466E /* Main.storyboard in Resources */,
 			);
@@ -505,6 +533,7 @@
 				F573F6E01DCC9728000E466E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F573F6E11DCC9728000E466E /* Build configuration list for PBXNativeTarget "RecorderTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +542,7 @@
 				F573F6E31DCC9728000E466E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F573F6E41DCC9728000E466E /* Build configuration list for PBXNativeTarget "RecorderUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +551,7 @@
 				F573F6E61DCC9728000E466E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
